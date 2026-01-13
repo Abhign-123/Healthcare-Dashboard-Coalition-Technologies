@@ -1,0 +1,183 @@
+    
+
+.sidebar {
+  position: fixed;
+  left: 1vw;
+  top: 10vh;              
+  bottom: 2vh;            
+  width: 23vw;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 50;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: none;
+}
+
+
+
+.search h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #072635;
+  font-weight: 600;
+}
+
+.search span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search span img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+    background-color: white;
+}
+
+.list-container {
+  flex: 1 1 auto;   
+  min-height: 0;    
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 6px; 
+  
+  background: none;
+}
+
+
+.patient-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.patient-card:hover {
+  background: rgba(1,240,208,0.06);
+}
+
+
+.patient-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+}
+
+.patient-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+
+.patient-name {
+  font-size: 14px;
+  color: #072635;
+  font-weight: 500;
+  background: none;
+}
+
+.patient-details {
+  font-size: 11px;
+  color: #6b7280;
+  background: none;
+  margin-top: 0.5vh;
+  margin-bottom: 0;
+}
+
+
+.patient-status {
+  font-size: 12px;
+  color: #6b7280;
+  margin-left: 8px;
+}
+
+
+.list-container::-webkit-scrollbar {
+  width: 6px;
+  
+}
+.list-container::-webkit-scrollbar-thumb {
+  background: #072635;
+  border-radius: 999px;
+}
+
+
+@media(max-width:1024px){
+  .list-container .patient-card{
+    padding: 8px 4px;
+  }
+
+  .list-container .patient-card .patient-name{
+      font-size: 13px;
+  }
+
+  .list-container .patient-card .patient-name .patient-details{
+      font-size: 10px;
+  }
+
+  .list-container .patient-card .more{
+    width: 1.5vw;
+  }
+
+  .list-container::-webkit-scrollbar {
+  width: 4px;
+  
+}
+
+  .list-container .patient-card .patient-info .patient-logo{
+        width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #f0f0f0;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .list-container .patient-card{
+    padding: 8px 0px;
+  }
+
+  .list-container .patient-card .patient-name{
+      font-size: 10px;
+  }
+
+  .list-container .patient-card .patient-name .patient-details{
+      font-size: 8px;
+  }
+
+  .list-container .patient-card .more{
+    width: 1vw;
+  }
+
+  .list-container::-webkit-scrollbar {
+  width: 3px;
+  
+  }
+  
+}

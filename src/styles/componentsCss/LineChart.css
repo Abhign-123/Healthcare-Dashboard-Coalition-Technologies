@@ -1,0 +1,13 @@
+.wrapper {
+  height: 25vh;
+  width: 32vw;
+  
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 27vw;
+    height: 25vh;
+    margin-left: -2vh;
+  }
+}

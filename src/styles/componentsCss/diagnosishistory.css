@@ -1,0 +1,251 @@
+.diagnosis-history{
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: 2.5vh;
+    background-color: #FFFFFF;
+    width: 48vw;
+    height: 56vh;
+    border-radius: 16px;
+}
+
+.chart{
+    background-color: #F4F0FE;
+    margin-left: 1.5vw;
+    margin-top: 3vh;
+    border-radius: 12px;
+    width: 45vw;
+    height: 24vh;
+    
+}
+
+h4{
+    background-color: #FFFFFF;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #072635;
+    margin-left: 1.5vw;
+    margin-top: 2.5vh;
+    margin-bottom:0vh;
+}
+.parameters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    margin-top: 1.75vh;
+    margin-left: 1.5vw;
+    width: 45vw;
+}
+
+.parameter{
+    width: 14.5vw;
+    height: 14vh;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+
+
+    img{
+        background: none;
+        width: 6vw;
+        height: 10vh;
+        margin-top: 0.75vh;
+    }
+
+    p {
+        margin: 0%;
+        background: none;
+        font-size: 14px;
+        
+    }
+
+    .param-details{
+        background: none;
+        margin-left: 1vw;
+
+        .top {
+            font-size: 14px;
+            font-weight: 475;
+        }
+
+        .middle {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 1vh;
+        }
+
+        .bottom {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+}
+
+#one{
+    background-color: #E0F3FA;
+
+}
+
+#two{
+    background-color: #FFE6E9;
+}
+
+#three{
+    background-color: #FFE6F1;
+}
+
+.chart{
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    
+
+    .linechart{
+        background: none;
+        width: 34vw;
+
+       
+
+        .chartname{
+            background: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1vh 1vw 0 1vw;
+            font-size: 16px;
+            font-weight: 800;
+
+            span{
+                font-size: 12px;
+                font-weight: 500;
+            }
+
+            img {
+                width: 30px;
+                height: 5px;
+            }
+        }
+    }
+    
+    .chart-details{
+        background: none;
+
+        .detail-top{
+            background: none;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        .detail-bottom{
+            background: none;
+        }
+
+        .name1{
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .name2{
+            font-size: 20px;
+            font-weight: 800;
+            margin: 1vh 0;
+        }
+
+        .name3{
+            font-size: 12px;
+        }
+
+        p {
+            margin: 0;
+            background: none;
+        }
+
+        img{
+            width: 10px;
+            height: 5px;
+            margin-right: 0.5vw;
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .parameter img {
+      width: 4vw;
+      margin-left: 0.5vw;
+      height: 8vh;
+  }
+
+    .parameter .param-details .top {
+      font-size: 12px;
+  }
+  .parameter .param-details .middle {
+      font-size: 20px;
+  }
+
+  .parameter .param-details .bottom {
+      font-size: 10px;
+  }
+
+  .chart .chart-details .name1 {
+      font-size: 11px;
+  }
+
+  .chart .chart-details .name2 {
+      font-size: 18px;
+      margin: 0;
+  }
+
+  .chart .chart-details .name3 {
+      font-size: 11px;
+  }
+
+  .chart .linechart .chartname{
+    font-size: 14px;
+  }
+
+  #arrowUp,
+  #arrowDown {
+    width: 10px !important;
+    height: 5px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+    .parameter .param-details .top {
+      font-size: 10px;
+  }
+    .parameter .param-details .middle {
+        font-size: 15px;
+    }
+    .parameter .param-details .bottom {
+        font-size: 8px;
+    }
+
+    .chart .chart-details .name1 {
+      font-size: 10px;
+  }
+
+  .chart .chart-details .name2 {
+      font-size: 16px;
+      margin: 0;
+  }
+
+  .chart .chart-details .name3 {
+      font-size: 10px;
+  }
+
+  .chart .linechart .chartname{
+    font-size: 13px;
+  }
+  
+  #arrowUp,
+  #arrowDown {
+    width: 8px !important;
+    height: 4px !important;
+  }
+}
